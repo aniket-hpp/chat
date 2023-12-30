@@ -15,12 +15,7 @@ func BoardCastMsg() {
 
 		for c := range Clients {
 			if c != *Sndr {
-				err := c.ws.WriteMessage(websocket.TextMessage, []byte(fmt.Sprintf(`
-						{
-							"name": "%s", 
-							"msg" : "%s"
-							}
-					`, Sndr.name, msg)))
+				err := c.ws.WriteMessage(websocket.TextMessage, []byte(fmt.Sprintf(`{"name": "%s", "msg" : "%s"}`, Sndr.name, msg)))
 
 				if err != nil {
 					log.Printf("err: %s\n", err.Error())

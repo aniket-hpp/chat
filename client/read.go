@@ -25,9 +25,9 @@ func ReadMsg(conn *websocket.Conn) {
 		err = json.Unmarshal(bytes, &msg)
 		if err != nil {
 			log.Printf("error: %s\n", err.Error())
-			return
+			fmt.Println(string(bytes))
+		} else {
+			fmt.Printf("%s: %s\n", msg.Name, msg.Msg)
 		}
-
-		fmt.Printf("%s: %s\n", msg.Name, msg.Msg)
 	}
 }

@@ -15,7 +15,7 @@ type Msg struct {
 }
 
 var (
-	Host = "ws://localhost:6969/chat"
+	Host = "wss://gochatapi.onrender.com/chat"
 )
 
 func main() {
