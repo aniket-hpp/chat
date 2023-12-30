@@ -7,6 +7,7 @@ A bare minimum chat api & client written in golang using sockets.
 
 ### Run
 Live on: `https://gochatapi.onrender.com`
+
 Clone: `https://github.com/thesmartaniket/chat.git && cd chat`
 
 + For server
