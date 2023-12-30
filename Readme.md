@@ -6,7 +6,7 @@ A bare minimum chat api & client written in golang using sockets.
 2. atomicgo.dev/cursor [client]
 
 ### Run
-Clone: `http://github.com/thesmartaniket/chat.git && cd chat`
+Clone: `https://github.com/thesmartaniket/chat.git && cd chat`
 
 + For server
 
